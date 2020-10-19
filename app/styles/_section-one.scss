@@ -1,0 +1,65 @@
+@import "_vars";
+
+.section-one {
+  min-height: 100vh;
+  height: 100%;
+  background-image: url(../images/bg-one.png);
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-position: center;
+  background-size: cover;
+
+  &__content-wrap {
+    max-width: 83.1%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__title {
+    max-width: 692px;
+    font: normal $regular 47px/120% $Morebi_Rounded;
+    color: $white;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 43px;
+  }
+
+  &__main-link {
+    font: normal $semibold 17px/132% $SF_Pro;
+    color: $white;
+    letter-spacing: 0.1em;
+    margin-right: 29px;
+    border: 1px solid $green-border;
+    border-radius: 32px;
+    background: rgba(0, 0, 0, 0.3);
+    box-sizing: border-box;
+    padding: 20px 66px;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background: rgba(0, 0, 0, 0.5);
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .section-one {
+    &__button-wrap {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__main-link {
+      margin: 0;
+      margin-bottom: 20px;
+    }
+  }
+}

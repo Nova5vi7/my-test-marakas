@@ -1,0 +1,134 @@
+@import "_vars";
+
+.footer {
+  width: 100%;
+  height: 100%;
+  padding: 74px 0 28px 0;
+  background-color: $black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__content-wrap {
+    max-width: 44%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 26px;
+  }
+
+  &__column-sectors,
+  &__column-affair {
+    max-width: 19.32%;
+    width: 100%;
+  }
+
+  &__column-contact {
+    max-width: 22%;
+    width: 100%;
+  }
+
+  &__item-link,
+  &__link-mark,
+  &__social-link {
+    transition: all 0.3s ease;
+    &:hover {
+      color: $button-menu-hover;
+    }
+  }
+
+  &__social {
+    display: none;
+  }
+
+  &__social-title {
+    font: normal $regular 42px/120% $Morebi_Rounded;
+    margin-bottom: 36px;
+  }
+
+  &__social-item {
+    margin-bottom: 26px;
+    display: flex;
+    align-items: center;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__social-link {
+    font: normal $regular 17px/200% $Mulish;
+    margin-left: 13px;
+    color: white;
+  }
+
+  &__column-title {
+    font: normal $regular 17px/130% $Mulish;
+  }
+
+  &__column-item {
+    font: normal $regular 13px/130% $Mulish;
+
+    a {
+      color: $white;
+    }
+  }
+
+  &__link-wrap {
+    width: 100%;
+    padding-left: 115px;
+  }
+
+  &__link-mark {
+    font: normal $regular 10px/130% $Mulish;
+    color: $green-link;
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  .footer {
+    &__content-wrap {
+      max-width: 100%;
+      justify-content: center;
+    }
+
+    &__column-sectors {
+      margin-right: 150px;
+    }
+
+    &__column-affair {
+      margin-right: 117px;
+    }
+
+    &__column-sectors,
+    &__column-affair,
+    &__column-contact {
+      text-align: center;
+    }
+
+    &__link-wrap {
+      padding-left: 0;
+      display: flex;
+      justify-content: center;
+    }
+  }
+}
+
+@media only screen and (max-width: 672px) {
+  .footer {
+    &__column-sectors,
+    &__column-affair,
+    &__column-contact {
+      display: none;
+    }
+
+    &__social {
+      display: block;
+    }
+
+    &__link-mark {
+      font-size: 13px;
+    }
+  }
+}

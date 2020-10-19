@@ -1,0 +1,35 @@
+@import "./mixins/_font-face.scss"; // импорт миксина
+
+// @include  - команда использования миксина
+// font-face - название миксина
+// в скобках (название шрифта, путь к шрифту, font-weight)
+@include font-face(
+  "Morebi Rounded",
+  "../fonts/morebi-rounded-regular/MorebiRounded-Regular"
+);
+@include font-face(
+  "SF Pro Display",
+  "../fonts/sf-pro-display-bold/SFProDisplay-Bold",
+  bold
+);
+@include font-face(
+  "SF Pro Display",
+  "../fonts/sf-pro-display-medium/SFProDisplay-Medium",
+  600
+);
+@include font-face(
+  "SF Pro Display",
+  "../fonts/sf-pro-display-regular/SFProDisplay-Regular"
+);
+@include font-face(
+  "SF Pro Display",
+  "../fonts/sf-pro-display-light/SFProDisplay-Light",
+  300
+);
+@include font-face(
+  "SF Pro Display",
+  "../fonts/sf-pro-display-semibold/SFProDisplay-Semibold",
+  700
+);
+@include font-face("Mulish", "../fonts/mulish-extrabold/Mulish-ExtraBold", 800);
+@include font-face("Mulish", "../fonts/mulish-regular/Mulish-Regular");

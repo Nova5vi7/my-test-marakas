@@ -1,0 +1,100 @@
+@import "_vars";
+
+.section-four {
+  height: 100vh;
+  width: 100%;
+  background-image: url(../images/background-top.svg),
+    url(../images/background-section-four.png);
+  background-repeat: no-repeat, no-repeat;
+  background-size: 100%, cover;
+  background-position: top, center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__slider-wrap {
+    // height: 100%;
+    max-width: 68.7%;
+    width: 100%;
+  }
+
+  .slick-dots {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    margin: 0;
+    padding: 0;
+
+    li {
+      list-style-type: none;
+      margin-right: 10px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+
+    button {
+      width: 10px;
+      height: 10px;
+      border: none;
+      background-color: $white;
+      font-size: 0;
+      transition: all 0.3s ease;
+      border-radius: 50%;
+      box-sizing: border-box;
+
+      &:hover {
+        background-color: $green-dots;
+      }
+    }
+  }
+
+  &__slide {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__icon-wrap {
+    margin-bottom: 49px;
+  }
+
+  &__title,
+  &__text {
+    color: $white;
+  }
+
+  &__title {
+    font: normal $regular 47px/120% $Morebi_Rounded;
+    margin-bottom: 66px;
+  }
+
+  &__text {
+    font: normal $regular 27px/140% $SF_Pro;
+  }
+
+  &__green-text {
+    color: $text-slider-section;
+  }
+}
+
+@media only screen and (max-width: 675px) {
+  .section-four {
+    &__slider-wrap {
+      max-width: 100%;
+      padding: 0 20px;
+    }
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .section-four {
+    height: 100%;
+    padding: 65px 0 71px;
+  }
+}

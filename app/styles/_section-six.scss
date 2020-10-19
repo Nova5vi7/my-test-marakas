@@ -1,0 +1,224 @@
+@import "_vars";
+
+.section-six {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $black-three;
+
+  &__content-wrap {
+    max-width: 83%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__text-wrap {
+    max-width: 40%;
+    width: 100%;
+  }
+
+  &__form-wrap {
+    max-width: 48.5%;
+    width: 100%;
+  }
+
+  &__title,
+  &__text {
+    color: $white;
+  }
+
+  &__title {
+    font: normal $regular 47px/120% $Morebi_Rounded;
+    margin-bottom: 15px;
+  }
+
+  &__text {
+    font: normal $regular 17px/140% $SF_Pro;
+    margin-bottom: 40px;
+  }
+
+  &__british-contact {
+    margin-bottom: 40px;
+  }
+
+  &__details-title {
+    font: normal $regular 17px/140% $Morebi_Rounded;
+    color: $green-dots;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+
+  &__contact-title-wrap {
+    display: flex;
+    align-items: center;
+
+    img {
+      margin-right: 13px;
+    }
+  }
+
+  &__contact-address,
+  &__contact-phone {
+    margin: 0;
+    padding-left: 40px;
+  }
+
+  &__details-link,
+  &__contact-title,
+  &__contact-address,
+  &__contact-phone {
+    font: normal $regular 17px/140% $SF_Pro;
+    color: $white;
+  }
+
+  &__contact-title {
+    margin: 0;
+  }
+
+  &__icon-email {
+    display: none;
+  }
+
+  &__details-link-wrap {
+    display: inline-block;
+    padding-left: 40px;
+    margin-bottom: 40px;
+  }
+
+  &__details-link,
+  &__contact-phone,
+  &__form-link {
+    &:hover {
+      color: $button-menu-hover;
+    }
+  }
+
+  &__form {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__input,
+  &__input-text {
+    padding: 0;
+    border: none;
+    background-color: $gray;
+    color: $gray-text;
+    font: normal $regular 17px/132% $SF_Pro;
+    letter-spacing: 0.1em;
+    padding-left: 25px;
+    border-radius: 11px;
+  }
+
+  &__input {
+    margin-bottom: 18px;
+    height: 63px;
+  }
+
+  &__input-text {
+    height: 100px;
+    padding-bottom: 37px;
+    margin-bottom: 20px;
+  }
+
+  &__form-link-wrap {
+    display: flex;
+    align-items: flex-end;
+    padding-left: 13px;
+    margin-bottom: 31px;
+
+    img {
+      margin-right: 8px;
+    }
+  }
+  &__form-link,
+  &__form-button,
+  &__details-link,
+  &__contact-phone {
+    transition: all 0.3s ease;
+  }
+
+  &__form-link {
+    font: normal $regular 17px/132% $SF_Pro;
+    color: $white;
+    text-decoration: underline;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__form-button-wrap {
+    display: flex;
+  }
+
+  &__form-button {
+    border: none;
+    background: linear-gradient(95.67deg, #a2f71e -31.66%, #3de74c 70.81%);
+    border-radius: 31.5px;
+    font: normal $bold 17px/132% $SF_Pro;
+    padding: 20px 51px;
+    transition: all 0.3s ease;
+
+    &:hover {
+      color: $gray;
+    }
+  }
+}
+
+@media only screen and (max-width: 964px) {
+  .section-six {
+    height: 100%;
+    padding: 72px 16px;
+
+    &__content-wrap {
+      max-width: 100%;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__details-wrap {
+      margin-bottom: 36px;
+    }
+
+    &__form-link-wrap,
+    &__form-button-wrap {
+      padding: 0;
+      justify-content: center;
+    }
+
+    &__details-link-wrap {
+      display: flex;
+      padding-left: 0;
+    }
+
+    &__icon-email {
+      display: block;
+      height: 19px;
+    }
+
+    &__icon-british,
+    &__icon-usa,
+    &__icon-email {
+      margin-right: 18px;
+    }
+  }
+}
+
+@media only screen and (max-width: 769px) {
+  .section-six {
+    &__text {
+      max-width: 350px;
+    }
+
+    &__text-wrap,
+    &__form-wrap {
+      max-width: 100%;
+    }
+  }
+}
