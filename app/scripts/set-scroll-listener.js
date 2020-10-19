@@ -1,5 +1,5 @@
 function setScrollListener(elem, activeClass, startPosition) {
-  window.addEventListener("scroll", () => {
+  window.addEventListener('scroll', () => {
     if (window.scrollY > startPosition) {
       elem.classList.add(activeClass);
     } else {
